@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BMGL.UI.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <title></title>
+    <!--引用css样式-->
+    <link href="common/css/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page" style="height: 100%;">
+            <table style="height: 100%; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="2" style="height: 15px;"></td>
+                </tr>
+                <tr>
+                    <td id="top" colspan="2" style="height: 77px;">
+                        <table style="height: 100%; width: 100%; border: 0;background:url(common/images/a1.jpg)" cellpadding="0" cellspacing="0" >
+                            <tr>
+                                <td style="width: 120px; text-align: center">
+                                    <img width="61" height="61" src="common/images/Logo.png" alt="logo" />
+                                </td>
+                                <td>
+                                    <div style="width:207px; height:40px;" alt="sname" /><span style="font-size:28px;color:orange;line-height:40px;text-align:center;font-weight:bold;">部门管理系统</span></div>
+                                </td>
+                                <td style="vertical-align: top; text-align: right">
+                                    <div style="margin: 10px 20px 0 0;">
+                                        <div>
+                                            &nbsp;
+                                        </div>
+                                        <div style="margin: 10px 0 0;color:white">
+                                            欢迎【<%=Session["loginUser"]%>】登录 
+                                        <span style="padding: 0 0 0 10px;">
+                                            <a href="Logout.ashx">退出 </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="mtd" style="width: 180px; vertical-align: top; background-color: #f1f1f1">
+                        <ul class="menu">
+                            <li class="L1" style="background:url(common/images/a2.jpg);height:40px;line-height:40px;">系统管理  </li>
+                            <li class="L2" style="background:url(common/images/a5.jpg) repeat;height:35px;line-height:35px;"><a href="UsersList.aspx">用户管理</a></li>
+                            <li class="L1" style="background:url(common/images/a2.jpg);height:40px;line-height:40px;">基础信息</li>
+                            <li class="L2" style="background:url(common/images/a5.jpg);height:35px;line-height:35px;"><a href="#">部门简介</a></li>
+                            <li class="L2" style="background:url(common/images/a5.jpg);height:35px;line-height:35px;"><a href="#">新闻活动</a></li>
+                            <li class="L2" style="background:url(common/images/a5.jpg);height:35px;line-height:35px;"><a href="#">个人信息</a></li>
+                            <li class="L1" style="background:url(common/images/a2.jpg);height:40px;line-height:40px;">成员信息</li>
+                            <li class="L2" style="background:url(common/images/a5.jpg);height:35px;line-height:35px;"><a href="StudentList.aspx">成员信息管理</a></li>
+                        </ul>
+                    </td>
+                    <td style="vertical-align: top; background:#f1f1f1; margin: 0px; overflow: auto; width: 840px;">
+                        <div id="main">
+
+                            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                            </asp:ContentPlaceHolder>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 20px; background-color: #f1f1f1; border-top: 1px solid #D8D8D8; text-align: center">
+                        <div id="footer">
+                            Copyright@2015 All rights reserved.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

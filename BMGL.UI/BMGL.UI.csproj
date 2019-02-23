@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A51C4AA-7911-4B21-A485-F1D85DA1179C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMGL.UI</RootNamespace>
+    <AssemblyName>BMGL.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="common\css\images\error.png" />
+    <Content Include="common\css\images\ml1.jpg" />
+    <Content Include="common\css\images\ml2.jpg" />
+    <Content Include="common\css\images\msd.jpg" />
+    <Content Include="common\css\images\onLoad.gif" />
+    <Content Include="common\css\images\right.png" />
+    <Content Include="common\css\images\skin_icons.png" />
+    <Content Include="common\css\images\topbg.jpg" />
+    <Content Include="common\css\images\verMenuImages.png" />
+    <Content Include="common\css\index.css" />
+    <Content Include="common\css\Login.css" />
+    <Content Include="common\css\nav.css" />
+    <Content Include="common\css\Site.css" />
+    <Content Include="common\css\userlogin.css" />
+    <Content Include="common\css\Validform.css" />
+    <Content Include="common\css\Visitor.css" />
+    <Content Include="common\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="common\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="common\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="common\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="common\fonts\MiFie-Web-Font.svg" />
+    <Content Include="common\images\1.jpg" />
+    <Content Include="common\images\10.jpg" />
+    <Content Include="common\images\13.jpg" />
+    <Content Include="common\images\14.jpg" />
+    <Content Include="common\images\15.jpg" />
+    <Content Include="common\images\16.jpg" />
+    <Content Include="common\images\17.jpg" />
+    <Content Include="common\images\4.jpg" />
+    <Content Include="common\images\6.jpg" />
+    <Content Include="common\images\8.jpg" />
+    <Content Include="common\images\a1.jpg" />
+    <Content Include="common\images\a2.jpg" />
+    <Content Include="common\images\a4.gif" />
+    <Content Include="common\images\a5.jpg" />
+    <Content Include="common\images\a6.jpg" />
+    <Content Include="common\images\a8.jpg" />
+    <Content Include="common\images\a9.jpg" />
+    <Content Include="common\images\banner.jpg" />
+    <Content Include="common\images\banner1.jpg" />
+    <Content Include="common\images\GDCP-logo.png" />
+    <Content Include="common\images\login_bg.png" />
+    <Content Include="common\images\login_bt.png" />
+    <Content Include="common\images\logo.jpg" />
+    <Content Include="common\images\Logo.png" />
+    <Content Include="common\images\ml1.jpg" />
+    <Content Include="common\images\ml2.jpg" />
+    <Content Include="common\images\msd.jpg" />
+    <Content Include="common\images\photos\6e7f95eb-1554-49b9-b815-c2651ca098fd.bmp" />
+    <Content Include="common\images\photos\eb86db14-ff29-4c11-adf3-d47e44ce3af9.bmp" />
+    <Content Include="common\images\pingpangqiu.jpg" />
+    <Content Include="common\images\systemname.png" />
+    <Content Include="common\images\titlebg.jpg" />
+    <Content Include="common\images\topbg.jpg" />
+    <Content Include="common\images\verMenuImages.png" />
+    <Content Include="common\images\yumaoqiu.jpg" />
+    <Content Include="common\images\zhaoxuan.jpg" />
+    <Content Include="common\images\zhixie.jpg" />
+    <Content Include="common\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="common\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="common\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="common\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="common\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="common\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="common\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="common\lib\bootstrap\js\npm.js" />
+    <Content Include="common\lib\html5shiv\html5shiv-printshiv.js" />
+    <Content Include="common\lib\html5shiv\html5shiv-printshiv.min.js" />
+    <Content Include="common\lib\html5shiv\html5shiv.js" />
+    <Content Include="common\lib\html5shiv\html5shiv.min.js" />
+    <Content Include="common\lib\jquery\jquery.js" />
+    <Content Include="common\lib\jquery\jquery.min.js" />
+    <Content Include="common\lib\respond\matchmedia.addListener.js" />
+    <Content Include="common\lib\respond\matchmedia.polyfill.js" />
+    <Content Include="common\lib\respond\respond.js" />
+    <Content Include="common\son\chengyuanjingying.html" />
+    <Content Include="common\son\guanyuwomen.html" />
+    <Content Include="common\son\jingcaihuodong.html" />
+    <Content Include="common\son\nanbei.html" />
+    <Content Include="common\son\pingpangqiu.html" />
+    <Content Include="common\son\pinshu.html" />
+    <Content Include="common\son\shetuanfengcai.html" />
+    <Content Include="common\son\yumaoqiu.html" />
+    <Content Include="common\son\zhaoxuan.html" />
+    <Content Include="common\son\zhixie.html" />
+    <Content Include="Hpage.aspx" />
+    <Content Include="Login.html" />
+    <Content Include="StudentAdd.aspx" />
+    <Content Include="StudentList.aspx" />
+    <Content Include="UsersAdd.aspx" />
+    <Content Include="UsersEdit.aspx" />
+    <Content Include="UsersList.aspx" />
+    <Content Include="Visitor.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Hpage.aspx.cs">
+      <DependentUpon>Hpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hpage.aspx.designer.cs">
+      <DependentUpon>Hpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.ashx.cs">
+      <DependentUpon>Login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.ashx.cs">
+      <DependentUpon>Logout.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentAdd.aspx.cs">
+      <DependentUpon>StudentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAdd.aspx.designer.cs">
+      <DependentUpon>StudentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentList.aspx.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentList.aspx.designer.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersAdd.aspx.designer.cs">
+      <DependentUpon>UsersAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersDelete.ashx.cs">
+      <DependentUpon>UsersDelete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersEdit.aspx.cs">
+      <DependentUpon>UsersEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersEdit.aspx.designer.cs">
+      <DependentUpon>UsersEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersList.aspx.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersList.aspx.designer.cs">
+      <DependentUpon>UsersList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.ashx.cs">
+      <DependentUpon>ValidateCode.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login.ashx" />
+    <Content Include="ValidateCode.ashx" />
+    <Content Include="Admin.Master" />
+    <Content Include="common\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="common\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="common\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="common\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="common\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="common\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="common\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="common\font-awesome-4.7.0\less\core.less" />
+    <Content Include="common\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="common\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="common\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="common\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="common\font-awesome-4.7.0\less\list.less" />
+    <Content Include="common\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="common\font-awesome-4.7.0\less\path.less" />
+    <Content Include="common\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="common\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="common\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="common\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="common\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="common\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="common\fonts\MiFie-Web-Font.eot" />
+    <Content Include="common\fonts\MiFie-Web-Font.ttf" />
+    <Content Include="common\fonts\MiFie-Web-Font.woff" />
+    <Content Include="common\lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="common\lib\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="common\lib\bootstrap\css\bootstrap.css.map" />
+    <Content Include="common\lib\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="common\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="common\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="common\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="common\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="common\lib\jquery\jquery.min.map" />
+    <Content Include="Logout.ashx" />
+    <Content Include="UsersDelete.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BMGL.BLL\BMGL.BLL.csproj">
+      <Project>{888d69bd-4d41-4f8f-8ea5-9713c24c6e02}</Project>
+      <Name>BMGL.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BMGL.Model\BMGL.Model.csproj">
+      <Project>{15bf77cf-13a2-4736-9bd3-a4ce26cb10a5}</Project>
+      <Name>BMGL.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="scripts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60802/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
